@@ -25,7 +25,7 @@ export default function LoggedOutLayout ({children}) {
         <MainMenu className='hidden h-screen md:flex'/>
         {!isDesktop && (
           <div
-            className='p-4 flex justify-between md:hidden sticky left-0 top-0 bg-background border-b border-border'>
+            className='p-4 flex justify-between md:hidden sticky z-10 left-0 top-0 bg-background border-b border-border'>
             <MenuTitle/>
 
             <Drawer direction='right'
