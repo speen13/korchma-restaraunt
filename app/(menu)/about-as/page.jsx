@@ -1,6 +1,6 @@
 'use client'
 
-import {Card, CardContent, CardFooter, CardHeader} from "@/components/ui/card";
+import {Card, CardContent, CardFooter} from "@/components/ui/card";
 import ava from '../../../public/images/pexels-quang-nguyen-vinh-222549-2175211.jpg'
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ export default function Page() {
       {/*  Page Title*/}
       {/*</CardHeader>*/}
       <CardContent className=' mt-4'>
-        <Image className='rounded-sm m-auto' width={850} height={500} src={ava} alt='photo'/>
+        {/*<Image className='rounded-sm m-auto' width={850} height={500} src={ava} alt='photo'/>*/}
 
       </CardContent>
       <CardFooter className='flex items-start mt-4'>
