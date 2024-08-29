@@ -82,7 +82,7 @@ export default function MainPage() {
             <div className="p-1">
               <Card className=''>
                 <CardContent className='flex flex-col aspect-square items-center justify-center p-6'>
-                  <Image alt='photo' width={700} className='rounded-sm' height={530} src={data.image}/>
+                  <Image alt={'photo'} width={700} className='rounded-sm' height={530} src={data.image}/>
 
                   <div className='m-auto'>
 
