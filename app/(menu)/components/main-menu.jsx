@@ -29,9 +29,7 @@ export default function MainMenu({className}) {
         <MenuItem href='/about-as'>
           Про нас
         </MenuItem>
-        <MenuItem href='/dashboard/settings'>
-          Settings
-        </MenuItem>
+
         <div className='mt-8 ml-2 text-gray-500'>Ми працюємо:</div>
         <div className='ml-2 text-gray-500'>ПН-НД</div>
         <div className='ml-2 text-gray-500'>10:00-23:00</div>
