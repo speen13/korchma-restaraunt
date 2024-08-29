@@ -12,7 +12,7 @@ export default function Page() {
       {/*  Page Title*/}
       {/*</CardHeader>*/}
       <CardContent className=' mt-4'>
-        {/*<Image className='rounded-sm m-auto' width={850} height={500} src={ava} alt='photo'/>*/}
+        <Image className='rounded-sm m-auto' width={850} height={500} src={ava} alt={''}/>
 
       </CardContent>
       <CardFooter className='flex items-start mt-4'>
