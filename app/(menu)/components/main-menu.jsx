@@ -21,13 +21,13 @@ export default function MainMenu({className}) {
           Головна
         </MenuItem>
         <MenuItem href='/contacts'>
-          Контакти
+          Де ми знаходимся
         </MenuItem>
         <MenuItem href='https://korchmarest.ps.me/'>
           Меню
         </MenuItem>
-        <MenuItem href='/dashboard/account'>
-          Account
+        <MenuItem href='/about-as'>
+          Про нас
         </MenuItem>
         <MenuItem href='/dashboard/settings'>
           Settings

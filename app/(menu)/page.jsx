@@ -9,7 +9,7 @@ import bar from '../../public/images/pexels-marceloverfe-27851491.jpg'
 import sweets from '../../public/images/pexels-marta-dzedyshko-1042863-2067396.jpg'
 import Autoplay from "embla-carousel-autoplay"
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
-import {Card, CardContent} from "@/components/ui/card";
+import {Card, CardContent, CardFooter} from "@/components/ui/card";
 import {useMediaQuery} from "@/app/hooks/use-media-query";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
@@ -19,38 +19,38 @@ const dataMenu = [{
   name:'Мангал Меню',
   image: mangal,
   link: 'https://korchmarest.ps.me/category/39',
-  btn: ''
+  btn: 'Блюда на мангалі включають в себе найрізніманітніші страви від мʼяса і овочів до риби'
 },
   {
     name:'Банкет Меню',
     image: bankets,
     link: 'https://korchmarest.ps.me/category/33',
-    btn: ''
+    btn: 'Страви для банкету які не залишать вас на одинці'
   }, {
   name:'Ланч',
   image: lanch,
   link: 'https://korchmarest.ps.me/category/36',
-  btn: ''
+  btn: 'Комплексні обіди завжди яскраві та улюблені'
   }, {
   name:'Солодощі',
   image: sweets,
   link: 'https://korchmarest.ps.me/category/40',
-  btn: ''
+  btn: 'Солодощі це емоції нашого життя'
   }, {
   name:'Морозиво',
   image: iceCream,
   link: 'https://korchmarest.ps.me/category/41',
-  btn: ''
+  btn: 'Морозиво допоможе охолодити та повернутися у дитинство'
   }, {
   name:'Кухня',
   image: kitchen,
   link: 'https://korchmarest.ps.me/category/1',
-  btn: ''
+  btn: 'Страви Української та Европейскої кухні'
   }, {
   name:'Бар Меню',
   image: bar,
   link: 'https://korchmarest.ps.me/category/2',
-  btn: ''
+  btn: 'Безалкогольні напої соки та компоти'
   }]
 export default function MainPage() {
   const isDesktop = useMediaQuery('(min-width: 768px)')
@@ -74,9 +74,9 @@ export default function MainPage() {
             <div className="p-1">
               <Card className=''>
                 <CardContent className='flex flex-col aspect-square items-center justify-center p-6'>
-                  <Image className='' height={730}  src={data.image} />
+                  <Image className='rounded-sm' height={730}   src={data.image} />
 
-                    <Button className='w-1/2 mt-4'>
+                    <Button className='w-1/2 md:text-3xl mt-4'>
                       <Link className='' href={data.link}>
                       {data.name}
                       </Link>
@@ -84,6 +84,12 @@ export default function MainPage() {
 
 
                 </CardContent>
+                <CardFooter>
+                  <div className='m-auto'>
+                    <h4 className=''>{data.btn}</h4>
+                  </div>
+
+                </CardFooter>
               </Card>
             </div>
           </CarouselItem>
